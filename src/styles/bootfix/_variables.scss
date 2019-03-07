@@ -4,8 +4,8 @@
 
 // $grays: ();
 
-// $primary:       $blue;
-// $secondary:     $gray-600;
+$primary:       #03c1dc;
+$secondary:     #ffffff;
 // $success:       $green;
 // $info:          $cyan;
 // $warning:       $yellow;
@@ -34,15 +34,16 @@
 
 // Spacing
 
-// $spacer: 1rem;
-// $spacers: (
-//   0: 0,
-//   1: ($spacer * .25),
-//   2: ($spacer * .5),
-//   3: $spacer,
-//   4: ($spacer * 1.5),
-//   5: ($spacer * 3)
-// );
+$spacer: 1rem;
+$spacers: (
+  0: 0,
+  1: ($spacer * .25),
+  2: ($spacer * .5),
+  3: $spacer,
+  4: ($spacer * 1.5),
+  5: ($spacer * 2.4),
+  6: ($spacer * 3.6),
+);
 
 // $sizes: (
 //   25: 25%,
@@ -54,8 +55,8 @@
 
 // Body
 
-// $body-bg:                   $white;
-// $body-color:                $gray-900;
+$body-bg:                   black;
+$body-color:                white;
 
 // Links
 
@@ -72,20 +73,22 @@
 //
 // $grid-breakpoints map $container-max-widths map are not adding to the original maps but overrides the whole ones
 //
-// $grid-breakpoints: (
-//   xs: 0,
-//   sm: 576px,
-//   md: 768px,
-//   lg: 992px,
-//   xl: 1200px
-// );
-//
-// $container-max-widths: (
-//   sm: 540px,
-//   md: 720px,
-//   lg: 960px,
-//   xl: 1140px
-// );
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  2xl: 1440px
+);
+
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1140px,
+  2xl: 1390px
+);
 //
 // $grid-columns:                12;
 // $grid-gutter-width:           30px;
@@ -117,7 +120,7 @@
 
 // Fonts
 
-// $font-family-sans-serif:      -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+// $font-family-sans-serif:      "Proxima Nova", Arial, sans-serif;
 // $font-family-monospace:       SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 // $font-family-base:            $font-family-sans-serif;
 
@@ -134,7 +137,7 @@
 // $font-weight-base:            $font-weight-normal;
 // $line-height-base:            1.5;
 
-// $h1-font-size:                $font-size-base * 2.5;
+// $h1-font-size:                51px;
 // $h2-font-size:                $font-size-base * 2;
 // $h3-font-size:                $font-size-base * 1.75;
 // $h4-font-size:                $font-size-base * 1.5;
@@ -143,7 +146,7 @@
 
 // $headings-margin-bottom:      ($spacer / 2);
 // $headings-font-family:        inherit;
-// $headings-font-weight:        500;
+// $headings-font-weight:        400;
 // $headings-line-height:        1.2;
 // $headings-color:              inherit;
 

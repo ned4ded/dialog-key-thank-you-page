@@ -1,0 +1,119 @@
+.page-thanks {
+  @mixin f {
+    font-family: $ff-nova;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 1.5;
+  }
+
+  @include bp-up(lg) {
+    background-image: url(../assets/imgs/main-bg-desktop.png);
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-size: auto;
+  }
+
+  &__heading {
+    @include f;
+
+    font-size: $h2-font-size;
+    line-height: 1.2;
+
+    @include bp-up(lg) {
+      font-size: 51px;
+    }
+  }
+
+  &__text-emphasis {
+    color: theme-color();
+  }
+
+  &__message {
+    @include f;
+
+    font-size: $font-size-base;
+
+    @include bp-up(lg) {
+      font-size: 31px;
+      line-height: 1.2;
+    }
+  }
+
+  &__btn {
+    @include f;
+
+    display: inline-block;
+
+    padding: 15px 25px 13px;
+
+    transition: background-color 0.5s ease-in;
+    text-align: center;
+
+    color: $body-color;
+    border-radius: 10px;
+    background-color: theme-color();
+
+    font-size: $font-size-base;
+    font-weight: 700;
+
+    @include bp-up(lg) {
+      min-width: 296px;
+      padding: 18px 50px 20px;
+
+      font-size: 31px;
+    }
+
+    &:hover {
+      transition: background-color 0s ease-in;
+      text-decoration: none;
+
+      color: $body-color;
+      background-color: darken(theme-color(), 10%);
+    }
+  }
+
+  &__download-icon {
+    $width: 221px;
+    $height: 66px;
+
+    width: $width * 0.7;
+    height: $height * 0.7;
+
+    @include bp-up(lg) {
+      width: $width;
+      height: $height;
+    }
+  }
+
+  &__mobile-header {
+    min-height: 240px;
+    padding-top: 42px;
+
+    background-image: url(../assets/imgs/main-bg-mobile.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 576px 240px;
+
+    @include bp-up(lg) {
+      display: none;
+    }
+
+    & > img {
+      display: block;
+
+      margin: 0 auto;
+    }
+  }
+
+  &__header {
+    display: none;
+
+    @include bp-up(lg) {
+      display: block;
+
+      padding-top: 29px;
+
+      margin-bottom: 340px;
+    }
+  }
+}

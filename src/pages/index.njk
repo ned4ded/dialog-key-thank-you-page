@@ -1,9 +1,52 @@
 {% extends "layout.njk" %}
 
 {% block content %}
-<div class="container">
-    <div class="row">
-      <h1 class="col-12">Hi there!</h1>
+<div class="container-fluid page-thanks">
+  <div class="row">
+    <div class="container">
+      <div class="row page-thanks__mobile-header mb-3">
+        <div class="col-12 d-flex flex-column align-items-center">
+          <img class="mb-5" src="assets/imgs/dk-logo-img@x1.png" alt="Logotype" width="36" height="62">
+
+          <img src="assets/imgs/dk-logo-text@x1.png" alt="Logotype" width="241" height="14">
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-12 page-thanks__header">
+          <a href="#" class="d-inline-block">
+            <img src="assets/imgs/dk-logo@x1.png" alt="Logotype" width="297" height="62">
+          </a>
+        </div>
+        <div class="col-12">
+          <h1 class="page-thanks__heading text-center mb-3 mb-lg-5">Thank you for joining Dialogue Key.</h1>
+        </div>
+
+        <div class="col-12 text-center mb-4 mb-lg-5">
+          <p class="page-thanks__message mb-0">
+            You have successfully verified your email.
+            <br>
+            Please, install the app on <span class="page-thanks__text-emphasis">App Store</span> or <span class="page-thanks__text-emphasis">Google Play</span>.
+            <br>
+            If you have it downloaded, please return to the Dialogue Key app.
+          </p>
+        </div>
+
+        <p class="col-12 text-center mb-4 mb-lg-6">
+          <a href="#" class="page-thanks__btn">Got to app</a>
+        </p>
+
+        <p class="col-12 text-center mb-0">
+          <a href="//play.google.com/store/apps/details?id=com.skylab.dialogue_key" class="d-inline-block mr-2 mr-lg-5">
+            <img class="page-thanks__download-icon" width="221" height="66" src="assets/imgs/icon-download-google.png" alt="Google Play Download Button">
+          </a>
+
+          <a href="//itunes.apple.com/us/app/dialogue-key/id1450972011?mt=8" class="d-inline-block">
+            <img class="page-thanks__download-icon" width="221" height="66" src="assets/imgs/icon-download-app-store.png" alt="App Store Download Button">
+          </a>
+        </p>
+      </div>
     </div>
+  </div>
 </div>
 {% endblock %}
